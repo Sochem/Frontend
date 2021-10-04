@@ -103,13 +103,6 @@ function Family(){
         </div>
     );
 
-    if(showUser)
-        return(
-            <div>
-                <Navbar/>
-                {showUser}
-            </div>
-        );
     return <div />
 }
 
