@@ -91,13 +91,7 @@ function Family() {
 
                
 
-                {/* <tr style={{textAlign:"center"}}>
-                                <th>Dp</th>
-                                <th>First name</th>
-                                <th>Last name</th>
-                                <th>Email</th>
-                                <th>Bio</th>
-                            </tr> */}
+              
                 {JSON.parse(year.user_id).map((members) => {
                   var member = users.filter((item) => item.id == members)[0];
                   var memberExtra = usersExtra.filter(
@@ -160,56 +154,3 @@ export default Family;
 
 
 
-
-{/* <tr>
-{" "}
-<td>
-  <a href="#">INV1001</a>
-</td>
-<td>Paragon</td>
-<td>1/5/2021</td>
-<td>
-  <p class="status status-unpaid">Unpaid</p>
-</td>
-</tr>
-
-<tr>
-<td>
-  <a href="#">INV1002</a>
-</td>
-<td>Sonic</td>
-<td>1/4/2021</td>
-<td>
-  <p class="status status-paid">Paid</p>
-</td>
-</tr>
-<tr>
-<td>
-  <a href="#">INV1003</a>
-</td>
-<td>Innercircle</td>
-<td>1/2/2021</td>
-<td>
-  <p class="status status-pending">Pending</p>
-</td>
-</tr>
-<tr>
-<td>
-  <a href="#">INV1004</a>
-</td>
-<td>Varsity Plus</td>
-<td>12/30/2020</td>
-<td>
-  <p class="status status-pending">Pending</p>
-</td>
-</tr>
-<tr>
-<td>
-  <a href="#">INV1005</a>
-</td>
-<td>Highlander</td>
-<td>12/18/2020</td>
-<td>
-  <p class="status status-paid">Paid</p>
-</td>
-</tr> */}
