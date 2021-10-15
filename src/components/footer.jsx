@@ -1,6 +1,7 @@
 import React , { useState, useEffect } from 'react';
-
+import './footer.css';
 var FontAwesome = require('react-fontawesome');
+
 
 
 function Footer(){
@@ -28,6 +29,7 @@ function Footer(){
                 <ul class="social-icons">
                   <li><a class="facebook" href="https://www.facebook.com/Sochem.iitbhu"><i class="fab fa-facebook"></i></a></li>
                   <li><a class="linkedin" href="https://www.linkedin.com/company/society-of-chemical-engineers-iit-bhu/"><i class="fab fa-linkedin"></i></a></li>   
+                  <li><a class="instagram" href="https://www.instagram.com/sochem_iitbhu/?hl=en"><i class="fab fa-instagram"></i></a></li>   
                 </ul>
               </div>
             </div>

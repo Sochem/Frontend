@@ -46,14 +46,14 @@ function Navbar(){
                         <ul className="navbar-nav">
                             <li className="nav-item">
                             { !(isLogin) ?
-                                <a className="nav-link" name="login" onClick={()=> {window.location='/login'}}>Login</a> :
+                                <a className="nav-link" name="login" onClick={()=> {window.location='/login'}}>LOGIN</a> :
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        My Profile
+                                        MY PROFILE
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" onClick={()=> window.location='/profile'}>My Profile</a>
-                                        <a class="dropdown-item" onClick={logoutUser}>Logout</a>
+                                        <a class="dropdown-item" onClick={()=> window.location='/profile'}>MY PROFILE</a>
+                                        <a class="dropdown-item" onClick={logoutUser}>LOGOUT</a>
                                     </div>
                                 </li>
                             }
