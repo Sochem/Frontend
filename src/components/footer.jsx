@@ -27,9 +27,10 @@ function Footer(){
     
               <div class="col-md-4 col-sm-6 col-xs-12">
                 <ul class="social-icons">
-                  <li><a class="facebook" href="https://www.facebook.com/Sochem.iitbhu"><i class="fab fa-facebook"></i></a></li>
+                  
                   <li><a class="linkedin" href="https://www.linkedin.com/company/society-of-chemical-engineers-iit-bhu/"><i class="fab fa-linkedin"></i></a></li>   
                   <li><a class="instagram" href="https://www.instagram.com/sochem_iitbhu/?hl=en"><i class="fab fa-instagram"></i></a></li>   
+                  <li><a class="facebook" href="https://www.facebook.com/Sochem.iitbhu"><i class="fab fa-facebook"></i></a></li>
                 </ul>
               </div>
             </div>
