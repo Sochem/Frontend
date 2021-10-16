@@ -6,10 +6,12 @@ import "./eachperson.css";
 
 function EachPerson(props) {
   return (
+    
     <div>
       <Navbar />
 
       <br />
+      
       <button onClick={() => props.ChangeShowUser(null)}>Back</button>
 
       {console.log(props)}
@@ -20,11 +22,11 @@ function EachPerson(props) {
         </div>
         <div class="description">{props.user.email}</div>
         <div class="bio">
-          Batch of {20 + props.userExtra.batch[3] + props.userExtra.batch[4]}
+          Batch of 20{ parseInt(props.userExtra.batch[3] + props.userExtra.batch[4])+4}
         </div>
 
         <ul class="data">
-          <li>BIO:</li>
+          <li>BIO: &nbsp; {props.userExtra.bio}</li>
         </ul>
       </div>
 
