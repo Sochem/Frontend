@@ -83,9 +83,9 @@ function Family() {
                   <tr>
                     <th>Dp</th>
                     <th>First name</th>
-                    <th>Last name</th>
+                    {/* <th>Last name</th> */}
                     <th>Email</th>
-                    <th>Bio</th>
+                    {/* <th>Bio</th> */}
                   </tr>
                 </thead>
 
@@ -113,23 +113,23 @@ function Family() {
                       <td
                         style={{ padding: "1.5rem", }}
                       >
-                        {member.first_name}
+                        {member.first_name}  {member.last_name}
                       </td>
-                      <td
+                      {/* <td
                         style={{ padding: "1.5rem", }}
                       >
-                        {member.last_name}
-                      </td>
+                        
+                      </td> */}
                       <td
                         style={{ padding: "1.5rem", }}
                       >
                         {member.email}
                       </td>
-                      <td
+                      {/* <td
                         style={{ padding: "1.5rem", }}
                       >
                         {memberExtra.bio}
-                      </td>
+                      </td> */}
                     </tr>
                   );
                 })}
