@@ -3,16 +3,22 @@ import { useCookies } from "react-cookie";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import "./eachperson.css";
+import "./people-block.css";
+var FontAwesome = require("react-fontawesome");
 
 function EachPerson(props) {
   return (
-    
     <div>
       <Navbar />
-
-      <br />
-      
-      <button onClick={() => props.ChangeShowUser(null)}>Back</button>
+      <button
+        onClick={() => props.ChangeShowUser(null)}
+        className="btn btn-secondary p-3 mb-5 "
+        id="btn1"
+      >
+        <h4>
+          <FontAwesome name="chevron-left" />
+        </h4>
+      </button>
 
       {console.log(props)}
       <div class="user-profile">
@@ -22,7 +28,8 @@ function EachPerson(props) {
         </div>
         <div class="description">{props.user.email}</div>
         <div class="bio">
-          Batch of 20{ parseInt(props.userExtra.batch[3] + props.userExtra.batch[4])+4}
+          Batch of 20
+          {parseInt(props.userExtra.batch[3] + props.userExtra.batch[4]) + 4}
         </div>
 
         <ul class="data">
