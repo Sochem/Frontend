@@ -4,9 +4,9 @@ import { useCookies } from "react-cookie";
 import EachPerson from "./eachperson";
 import Navbar from "./navbar";
 import "./family.css";
-//  #ID class/id/tag
+//#ID class/id/tag
 
-function Family() {
+function Family(){
   const [token] = useCookies(["mr-token"]);
   const [family, setFamily] = useState(null);
   const [users, setUsers] = useState(null);
@@ -73,25 +73,22 @@ function Family() {
         </div>
         {family.map((year) => {
           return (
-            <div className="family__table border p-4 m-3 bg-light">
+            <div className="family__table border p-4 m-5 bg-light">
               <h1 style={{ marginBottom: "2rem" }}>
-                {year.batch.toUpperCase()}
+              
+               Batch of { year.batch.slice(3,5) }
               </h1>
+              {console.log(year)}
 
-              <table>
-                <thead >
+              <table style={{width:"80rem"}}>
+                <thead>
                   <tr>
-                    <th>Dp</th>
-                    <th>First name</th>
-                    {/* <th>Last name</th> */}
-                    <th>Email</th>
-                    {/* <th>Bio</th> */}
+                    <th style={{fontSize:"1.3rem"}}>Dp</th>
+                    <th style={{fontSize:"1.3rem"}}>Name</th>
+                    <th style={{fontSize:"1.3rem"}}>Email</th>
                   </tr>
                 </thead>
 
-               
-
-              
                 {JSON.parse(year.user_id).map((members) => {
                   var member = users.filter((item) => item.id == members)[0];
                   var memberExtra = usersExtra.filter(
@@ -101,35 +98,17 @@ function Family() {
                   if (!member || !memberExtra) return <div />;
                   return (
                     <tr onClick={() => setShowUser(members)}>
-                      <td
-                        style={{ padding: "1.5rem",  }}
-                      >
+                      <td style={{ padding: "1.5rem" }}>
                         <img
-                          style={{ height: "4rem", borderRadius: "50%" }}
+                          style={{ height: "4.8rem", borderRadius: "50%" }}
                           src={memberExtra.profile_photo}
                           alt="profile"
                         />
                       </td>
-                      <td
-                        style={{ padding: "1.5rem", }}
-                      >
-                        {member.first_name}  {member.last_name}
+                      <td style={{ padding: "1.5rem" }}>
+                        {member.first_name} {member.last_name}
                       </td>
-                      {/* <td
-                        style={{ padding: "1.5rem", }}
-                      >
-                        
-                      </td> */}
-                      <td
-                        style={{ padding: "1.5rem", }}
-                      >
-                        {member.email}
-                      </td>
-                      {/* <td
-                        style={{ padding: "1.5rem", }}
-                      >
-                        {memberExtra.bio}
-                      </td> */}
+                      <td style={{ padding: "1.5rem" }}>{member.email}</td>
                     </tr>
                   );
                 })}
@@ -148,9 +127,3 @@ function Family() {
 }
 
 export default Family;
-
-
-
-
-
-
