@@ -76,7 +76,7 @@ function Family(){
             <div className="family__table border p-4 m-5 bg-light">
               <h1 style={{ marginBottom: "2rem" }}>
               
-               Batch of { year.batch.slice(3,5) }
+               Batch of 20{parseInt(year.batch.slice(3,5)) + 4}
               </h1>
               {console.log(year)}
 
