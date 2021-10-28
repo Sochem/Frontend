@@ -1,0 +1,51 @@
+  
+#family .family__table{
+display: grid;
+place-items: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+#family  table {
+  border-collapse: collapse;
+  box-shadow: 0 5px 10px #e1e5ee;
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+}
+#family  thead{
+    box-shadow: 0 5px 10px #e1e5ee;
+  }
+
+  #family  th {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  #family  td {
+    padding: 1rem 2rem;
+  }
+
+
+  #family  .amount {
+    text-align: right;
+  }
+
+ 
+  #family   tr:nth-child(even) {
+    background-color: #f4f6fb;
+  }
+ 
