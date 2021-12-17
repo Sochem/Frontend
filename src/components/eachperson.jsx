@@ -10,6 +10,10 @@ function EachPerson(props) {
   return (
     <div>
       <Navbar />
+   
+
+      {console.log(props)}
+      <div class="user-profile">
       <button
         onClick={() => props.ChangeShowUser(null)}
         className="btn btn-secondary p-3 mb-5 "
@@ -19,9 +23,6 @@ function EachPerson(props) {
           <FontAwesome name="chevron-left" />
         </h4>
       </button>
-
-      {console.log(props)}
-      <div class="user-profile">
         <img class="avatar" src={props.userExtra.profile_photo} alt="Ash" />
         <div class="username">
           {props.user.first_name} {props.user.last_name}
@@ -37,7 +38,7 @@ function EachPerson(props) {
         </ul>
       </div>
 
-      <Footer />
+      <Footer className="footer-each"/>
     </div>
   );
 }
