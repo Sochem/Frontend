@@ -33,7 +33,8 @@ function Cloud(){
             <div className="container container-fluid text-center p-3">
                 <div className="row align-items-end">
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center bg-none">
-                        <a href="https://drive.google.com/drive/u/5/folders/15iEbYDjKoCVh-AmlbUN0-3YZiKoCG1gr">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/15iEbYDjKoCVh-AmlbUN0-3YZiKoCG1gr"> */}
+                        <a href="https://drive.google.com/drive/folders/1TOxyPEmb8l9VvNAa1IycT7rBHIp2x_Wd?usp=sharing">
                             <div id="cloud-card" className="card wow animate__flipInX">
                                 <img class="card-img-top" src={books} alt="Card image cap"/>
                                 <div class="card-body">
@@ -43,7 +44,8 @@ function Cloud(){
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/u/5/folders/1cCApJe4LYWJ43wyr0p3HMsjK5xPE-RTa">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/1cCApJe4LYWJ43wyr0p3HMsjK5xPE-RTa"> */}
+                        <a href="https://drive.google.com/drive/folders/15pTBbGVUdA0dTGFQI7QpfQWaXDQsr6cy?usp=sharing">
                             <div id="cloud-card" class="card wow animate__flipInX">
                                 <img class="card-img-top" src={core} alt="Card image cap"/>
                                 <div class="card-body">
@@ -53,7 +55,8 @@ function Cloud(){
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/u/5/folders/19doEA6GO4HF8oqWTgPJbOx9xTCvJlJqE">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/19doEA6GO4HF8oqWTgPJbOx9xTCvJlJqE"> */}
+                        <a href="https://drive.google.com/drive/folders/1R34YagE19rLI31yMRQo4G-UnvHRRBmgn?usp=sharing">
                             <div id="cloud-card" class="card wow animate__flipInX">
                                 <img class="card-img-top" src={gate} alt="Card image cap"/>
                                 <div class="card-body">
@@ -63,7 +66,8 @@ function Cloud(){
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/u/5/folders/1ojVB0uXyx5JaX8JlSg0JHZaD5cDkKO5S">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/1ojVB0uXyx5JaX8JlSg0JHZaD5cDkKO5S"> */}
+                        <a href="https://drive.google.com/drive/folders/1mZSAyhN7BNX51g9V4if-6P1NWyFqtCmm?usp=sharing">
                             <div id="cloud-card" class="card wow animate__flipInX">
                                 <img class="card-img-top" src={gre} alt="Card image cap"/>
                                 <div class="card-body">
@@ -73,7 +77,8 @@ function Cloud(){
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/u/5/folders/1-20gmIL9mSEOeXkBj9cSGq7M0qGfLWkZ">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/1-20gmIL9mSEOeXkBj9cSGq7M0qGfLWkZ"> */}
+                        <a href="https://drive.google.com/drive/folders/18u9EqfPqZ7t9z9RL49WL1ebeW51t_eF-?usp=sharing">
                             <div id="cloud-card" class="card wow animate__flipInX">
                                 <img class="card-img-top" src={hulm} alt="Card image cap"/>
                                 <div class="card-body">
@@ -83,7 +88,8 @@ function Cloud(){
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/u/5/folders/1ojVB0uXyx5JaX8JlSg0JHZaD5cDkKO5S">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/1ojVB0uXyx5JaX8JlSg0JHZaD5cDkKO5S"> */}
+                        <a href="https://drive.google.com/drive/folders/1ZGKENtgtA8UTCHcWIlSveJxg9_uX44vt?usp=sharing">
                         <div id="cloud-card" class="card wow animate__flipInX">
                             <img class="card-img-top" src={online} alt="Card image cap"/>
                             <div class="card-body">
@@ -93,7 +99,8 @@ function Cloud(){
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/u/5/folders/1l-Ww9Wx73wrIBdh-gztKfp-fX_sjanh5">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/1l-Ww9Wx73wrIBdh-gztKfp-fX_sjanh5"> */}
+                        <a href="https://drive.google.com/drive/folders/1-FPXGNsfx7jcpLksfqqyo_7KA0KeOBi9?usp=sharing">
                         <div id="cloud-card" class="card wow animate__flipInX">
                             <img class="card-img-top" src={oe} alt="Card image cap"/>
                             <div class="card-body">
@@ -103,7 +110,8 @@ function Cloud(){
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                        <a href="https://drive.google.com/drive/u/5/folders/1kP586gtLGQI4b-EiyGewZbL6D9WBNOXh">
+                        {/* <a href="https://drive.google.com/drive/u/5/folders/1kP586gtLGQI4b-EiyGewZbL6D9WBNOXh"> */}
+                        <a href="https://drive.google.com/drive/folders/1VYASsgV_Ods_EyHiKd_Sm7qjE1gyNpnU?usp=sharing">
                         <div id="cloud-card" class="card wow animate__flipInX">
                             <img class="card-img-top" src={coding} alt="Card image cap"/>
                             <div class="card-body">
