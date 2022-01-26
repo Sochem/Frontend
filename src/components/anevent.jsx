@@ -1,32 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import API from '../api-service'; 
-import { useParams } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
-import Navbar from './navbar';
-import Footer from './footer';
 var FontAwesome = require('react-fontawesome');
 
-function Anevent() {
+function Anevent(props) {
 
-    const { title } = useParams();
-    const [ token, setToken ] = useCookies(['mr-token']);
-    const [ eventlist, setEventlist] = useState([]);
-    const [ event, setEvent] = useState([]);
-
-    const allEvents = () => {
-        API.getEvents({'token':token['mr-token']})
-           .then( resp => setEvent(resp.find( ev => ev.title.toLowerCase() === String(title))))
-           .catch( error => console.log(error))
-    }
+    const [ token ] = useCookies(['mr-token']);
+    const [ event ] = useState(props.event);
 
     useEffect( () => {
         if(!token['mr-token']) window.location.href = '/login';
-        allEvents()
     },[token])
 
     return (
         <div>
-            <Navbar/>
         <div className="container">
             { event ? 
             <div className="container-fluid jumbotron pt-4 bg-light">
@@ -83,7 +69,6 @@ function Anevent() {
             <h1>Event doesn't exist</h1>
             }
         </div>
-        <Footer/>
         </div>
     )
 }

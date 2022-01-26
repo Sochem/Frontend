@@ -14,7 +14,7 @@ function Forum(){
     const [posts, setPosts] = useState([]);
     const [showComment, setShowComment] = useState(null);
     const [user, setUser] = useState();
-    const [token, setToken] = useCookies(['mr-token']);
+    const [token] = useCookies(['mr-token']);
     const [showNewPost, setShowNewPost] = useState(false);
      useEffect(()=>{
          

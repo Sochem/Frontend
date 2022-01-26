@@ -15,7 +15,7 @@ function Profile(){
 
     const [user, setUser] = useState(null);
     const [userDetail, setUserDetail] = useState(null);
-    const [token, setToken] = useCookies(['mr-token']);
+    const [token] = useCookies(['mr-token']);
     const [forumPost, setForumPost] = useState([]);
     const [showComment, setShowComment] = useState(null);   
     const [forumComment, setForumComment] = useState([]);

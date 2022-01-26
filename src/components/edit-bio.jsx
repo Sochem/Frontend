@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './forum-home.css';
-import API from '../api-service';
 import { useCookies } from 'react-cookie';
-var FontAwesome = require('react-fontawesome');
 
 function EditBio(props){
     const [body, setBody] = useState(props.lastBio);
-    const [token, setToken] = useCookies(['mr-token']);
+    const [token] = useCookies(['mr-token']);
     const bodyChaned = evt =>{
         setBody(evt.target.value);
     }

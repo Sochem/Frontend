@@ -1,6 +1,5 @@
-import React , { useState, useEffect } from 'react';
+import React from 'react';
 import './footer.css';
-var FontAwesome = require('react-fontawesome');
 
 
 

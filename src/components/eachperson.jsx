@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { useCookies } from "react-cookie";
+import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import "./eachperson.css";
-import "./people-block.css";
-var FontAwesome = require("react-fontawesome");
 
 function EachPerson(props) {
   return (

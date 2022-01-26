@@ -11,6 +11,12 @@ function Family(){
   const [users, setUsers] = useState(null);
   const [usersExtra, setUsersExtra] = useState(null);
   const [showUser, setShowUser] = useState(null);
+
+  useEffect( () => {
+    if(!token['mr-token']) window.location.href = '/login';
+  },[token])
+
+
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/api/family`, {
       method: "GET",

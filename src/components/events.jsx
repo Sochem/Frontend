@@ -12,11 +12,11 @@ function Events() {
     
     const [ eventlist, setEventlist] = useState([]);
     const [ eventnum, setEventnum ] = useState(null);
-    const [ token, setToken ] = useCookies(['mr-token']);
+    const [ token ] = useCookies(['mr-token']);
 
     const allEvents = () => {
         API.getEvents({'token':token['mr-token']})
-           .then( resp => setEventlist(resp))
+           .then( resp => {setEventlist(resp);console.log(resp,"event")})
            .catch( error => console.log(error))
     }
 
@@ -34,13 +34,7 @@ function Events() {
             <Navbar/>
             <div class="container">
                 {eventnum ?
-                    eventlist.map( evt => {
-                        return(
-                            evt.id==eventnum ?
-                            <Anevent event={evt}/>
-                            : null
-                        );
-                    })
+                    <Anevent event={eventnum}/>
                 :
                 <div>
                     <Allevents eventlist={eventlist} eventSelected={eventSelected}/>

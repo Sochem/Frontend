@@ -1,9 +1,8 @@
-import React , { useState, useEffect } from 'react';
+import React , { useEffect } from 'react';
 import WOW from 'wowjs';
 import './cloud.css';
 import Navbar from './navbar';
 import { useCookies } from 'react-cookie';
-import logo from './sochemlogo.png';
 import coding from './images/cloud-coding.png';
 import books from './images/cloud-books.png';
 import online from './images/cloud-online.png';

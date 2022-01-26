@@ -3,14 +3,12 @@ import AllComemnts from './all-comments';
 import './forum-home.css';
 import API from '../api-service';
 import { useCookies } from 'react-cookie';
-var FontAwesome = require('react-fontawesome');
 
 
 function Comment(props){
     const [comments, setComments] = useState([]);
     const [newComment, setNewComment] = useState('');
-    const [token, setToken] = useCookies(['mr-token']);
-    const [userDetails, setUserDetails] = useState(null);
+    const [token] = useCookies(['mr-token']);
     useEffect(()=>{
         fetch(`${process.env.REACT_APP_API_URL}/api/forum-comment?post_id=${props.postId}`, {
             method: 'GET',

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
@@ -7,7 +7,7 @@ function Form(props){
 
     const [heading, setHeading] = useState('');
     const [body, setBody] = useState('');
-    const [token, setToken] = useCookies(['mr-token']);
+    const [token] = useCookies(['mr-token']);
     
     const headingChanged = evt =>{
         setHeading(evt.target.value);

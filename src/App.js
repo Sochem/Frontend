@@ -5,12 +5,9 @@ import 'animate.css/animate.css'
 import './App.css';
 import { useCookies } from 'react-cookie';
 import Footer from './components/footer';
-import logo from './components/sochemlogo.png';
 import Moment from 'moment';
-import bg from './components/images/image.jpg';
 import Navbar from './components/navbar';
 import Header from './components/header';
-import { ListGroupItem } from 'react-bootstrap';
 import Testimonials from './components/testimonials';
 import Carousel from './components/caruosel';
 
@@ -19,7 +16,7 @@ var FontAwesome = require('react-fontawesome');
 function App() {
 
   const [posts, setPosts] = useState([]);
-  const [token, setToken] = useCookies(['mr-token']);
+  const [token] = useCookies(['mr-token']);
 
   useEffect(()=>{
     new WOW.WOW().init();
@@ -41,7 +38,6 @@ function App() {
       <Navbar/>
       <div>
           <Header/>
-
           <div className="row container d-flex justify-content-around ml-auto mr-auto border bg-light pb-5"> 
             <div className="col-12 col-md-5  border rounded shadow px-4">
                 <div className="rounded text-center p-1 m-0" style={{backgroundColor:'black'}}>

@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import Navbar from './navbar';
-import Comment from './forum-comment';
-import Footer from './footer';
-import EditBio from './edit-bio';
 import './auth.css';
 import '../components/profile.css';
 import {GoogleLogin} from 'react-google-login';

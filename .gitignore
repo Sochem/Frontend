@@ -9,7 +9,7 @@ src/client_id.js
 # testing
 /coverage
 package-lock.json
-
+/build
 # misc
 .DS_Store
 .env.local
