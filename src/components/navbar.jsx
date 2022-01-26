@@ -39,7 +39,7 @@ function Navbar(){
                                 <a className="nav-link" name="cloud" onClick={()=> {window.location='/cloud'}}>CLOUD</a>
                             </a>
                             <a className="nav-item" href="#">
-                                <a className="nav-link" name="people" onClick={()=> {window.location='/people'}}>PEOPLE</a>
+                                <a className="nav-link" name="family" onClick={()=> {window.location='/family'}}>FAMILY</a>
                             </a>
                         </ul>
                         

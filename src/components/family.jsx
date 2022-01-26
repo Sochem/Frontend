@@ -4,7 +4,6 @@ import { useCookies } from "react-cookie";
 import EachPerson from "./eachperson";
 import Navbar from "./navbar";
 import "./family.css";
-//#ID class/id/tag
 
 function Family(){
   const [token] = useCookies(["mr-token"]);
@@ -78,14 +77,13 @@ function Family(){
               
                Batch of 20{parseInt(year.batch.slice(3,5)) + 4}
               </h1>
-              {console.log(year)}
 
-              <table style={{width:"80rem"}}>
+              <table>
                 <thead>
                   <tr>
                     <th style={{fontSize:"1.3rem"}}>Dp</th>
                     <th style={{fontSize:"1.3rem"}}>Name</th>
-                    <th style={{fontSize:"1.3rem"}}>Email</th>
+                    <th className="d-none d-lg-block" style={{fontSize:"1.3rem"}}>Email</th>
                   </tr>
                 </thead>
 
@@ -108,7 +106,7 @@ function Family(){
                       <td style={{ padding: "1.5rem" }}>
                         {member.first_name} {member.last_name}
                       </td>
-                      <td style={{ padding: "1.5rem" }}>{member.email}</td>
+                      <td className="d-none d-lg-block" style={{ padding: "1.5rem" }}>{member.email}</td>
                     </tr>
                   );
                 })}

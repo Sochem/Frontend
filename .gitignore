@@ -8,7 +8,7 @@ src/client_id.js
 .env
 # testing
 /coverage
-
+package-lock.json
 
 # misc
 .DS_Store

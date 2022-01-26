@@ -11,7 +11,7 @@ import Cloud from './components/cloud'
 import Profile from './components/profile';
 import Events from './components/events.jsx';
 import Anevent from './components/anevent';
-import People from './components/people';
+// import People from './components/people';
 import Family from './components/family';
 
 document.body.style.zoom = 0.9;
@@ -25,7 +25,7 @@ const routing = (
       <Route exact path="/events" component={Events}/>
       <Route exact path="/events/:title" component={Anevent}/>
       <Route exact path="/profile" component={Profile}/>
-      <Route exact path="/people" component={People}/>
+      {/* <Route exact path="/people" component={People}/> */}
       <Route exact path="/family" component={Family}/>
     </CookiesProvider>
   </BrowserRouter>

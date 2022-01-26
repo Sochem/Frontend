@@ -50,8 +50,8 @@ function App() {
                 {token['mr-token'] ?
                 <div className="mt-4">
                 <ul>
-                <li className="home-updates mb-2"><span ><a href="https://docs.google.com/spreadsheets/d/1BpTjp9lKcgRu0ioZ8ob841Q92GV8m34osEBG0tppTdk/edit#gid=1810039578" id="home-update-a">List of Registered Students from First Year</a></span></li>
-                <li className="home-updates"><span><a id="home-update-a" href="/events/case-study(first-year)">Case Study: Results out</a>.</span></li>
+                <li className="home-updates mb-2"><span ><a href="https://docs.google.com/spreadsheets/d/1b593i-S31EPIQnbvQgUUyPnolGbOabC5owhm7aI4Iag/edit?usp=sharing" id="home-update-a">List of Registered Students from First Year</a></span></li>
+                {/* <li className="home-updates"><span><a id="home-update-a" href="/events/case-study(first-year)">Case Study: Results out</a>.</span></li> */}
                 </ul>
                 </div> : <h4 className="text-secondary text-center mt-3">Login to view this section.</h4 >}
             </div>
