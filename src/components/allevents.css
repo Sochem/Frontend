@@ -1,68 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-img{
-    border-radius: 0.5rem;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+img {
+  border-radius: 0.5rem;
 }
 
-.box{
-    border-radius: 0.5rem;
+.box {
+  border-radius: 0.5rem;
 }
 
-.event-title-all{
-    font-size: 1.7rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: normal;
-    margin-top: 1vh;
-    margin-bottom: 2vh;
-    opacity: 0.8;
+.event-title-all {
+  font-size: 1.7rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  opacity: 0.8;
 }
-.img-events-cov{
-    height: 500px;
-    font-family: 'Lato', sans-serif;
-    width: auto;
+.img-events-cov {
+  height: 500px;
+  font-family: "Lato", sans-serif;
+  width: auto;
 }
-.event-info-all{
-    font-size: 1.3rem;
-    font-family: 'Open Sans', sans-serif;
-    opacity: 0.8;
+.event-info-all {
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.8;
 }
 .zoom {
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
-  }
-  
-  .zoom:hover {
-      z-index: 10;
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+  transition: transform 0.2s; /* Animation */
+  margin: 0 auto;
+}
 
-  .anevent-desc{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2rem;
-  }
+.zoom:hover {
+  z-index: 10;
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.anevent-desc {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.2rem;
+}
+
+.mainbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 120px;
+}
+
+.card {
+  position: relative;
+  width: 314px;
+  height: 250px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.card:hover {
+  height: 400px;
+  width: 350px;
+}
+
+.card .image {
+  position: relative;
+  width: 260px;
+  height: 260px;
+
+  top: -40%;
+  left: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.card .image img {
+  max-width: 260px;
+  border-radius: 15px;
+}
+
+.card .content {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
 
 @media screen and (max-width: 600px) {
-    .event-title-all{
-        font-size: 25px;
-    }
-    .event-info-all{
-        font-size: 18px;
-    }
-    .event-body-an{
-        font-size: 15px;
-    }
-    .img-events-cov{
-        height: auto;
-        width: auto;
-    }
+  .event-title-all {
+    font-size: 25px;
+  }
+  .event-info-all {
+    font-size: 18px;
+  }
+  .event-body-an {
+    font-size: 15px;
   }
 
-  #anevent-title{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
+  .img-events-cov {
+    height: auto;
+    width: auto;
   }
+
+  .mainbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;
+    margin-top: 120px;
+  }
+
+  .card {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+  }
+  .card:hover {
+    height: 350px;
+    width: 300px;
+  }
+
+  .card .image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+    top: -40%;
+    left: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .card .image img {
+    max-width: 260px;
+    border-radius: 15px;
+  }
+
+  .card .content {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .card:hover .content {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+}
+
+#anevent-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
