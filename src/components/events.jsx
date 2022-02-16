@@ -32,7 +32,7 @@ function Events() {
     return (
         <div>
             <Navbar/>
-            <div class="container">
+            <div c>
                 {eventnum ?
                     <Anevent event={eventnum}/>
                 :
@@ -45,5 +45,4 @@ function Events() {
         </div>
     )
 }
-
 export default Events;
