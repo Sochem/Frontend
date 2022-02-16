@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./allevents.css";
+;
 
 var FontAwesome = require("react-fontawesome");
 
 function Allevents(props) {
   return (
     <div >
+    { props.eventlist ? 
       <div className="mainbox" >
         {props.eventlist.map((evt, index) => {
           return (
@@ -23,7 +25,7 @@ function Allevents(props) {
 
               <div className="card">
                 <div className="image">
-                  <img src={evt.cover1} class="img-fluid" style={{height:"250px", width:"300px"}}></img>
+                  <img src={evt.cover1} class="img-fluid" style={{height:"260px", width:"300px"}}></img>
                 </div>
                 <div className="content">
                   <div className="event-title-all">{evt.title}</div>
@@ -39,6 +41,7 @@ function Allevents(props) {
           );
         })}
       </div>
+      : <div></div>}
     </div>
   );
 }

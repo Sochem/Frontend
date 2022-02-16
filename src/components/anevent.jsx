@@ -13,9 +13,9 @@ function Anevent(props) {
 
     return (
         <div>
-        <div className="container">
+        <div>
             { event ? 
-            <div className="container-fluid jumbotron pt-4 bg-light">
+            <div className="jumbotron pt-4 bg-light">
               <div id="anevent-title">{event.title}</div>
               <hr></hr>
               <h4 className="event-info-all"><FontAwesome name="map"/> {event.venue} &nbsp;

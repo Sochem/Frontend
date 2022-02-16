@@ -50,6 +50,7 @@ img {
 
 .mainbox {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -61,15 +62,17 @@ img {
   width: 314px;
   height: 250px;
   background-color: #fff;
-  margin: 30px 10px;
+  margin: 65px 40px;
   padding: 20px 15px;
-
+  flex-wrap: wrap;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
   border-radius: 15px;
 }
+
 .card:hover {
   height: 400px;
   width: 350px;
@@ -79,9 +82,9 @@ img {
   position: relative;
   width: 260px;
   height: 260px;
-
+  border-radius: 15px ;
   top: -40%;
-  left: 8px;
+  /* left: 8px; */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -97,7 +100,8 @@ img {
   padding: 10px 15px;
   color: #111;
   text-align: center;
-
+  justify-self: center;
+  /* left: 10px; */
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -128,6 +132,7 @@ img {
 
   .mainbox {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column !important;
@@ -138,16 +143,18 @@ img {
     position: relative;
     width: 300px;
     height: 220px;
+    justify-content: center;
     background-color: #fff;
     margin: 30px 10px;
     padding: 20px 15px;
-
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
     border-radius: 15px;
   }
+  
   .card:hover {
     height: 350px;
     width: 300px;
@@ -157,9 +164,9 @@ img {
     position: relative;
     width: 250px;
     height: 250px;
-
+    border-radius: 15px ;
     top: -40%;
-    left: 8px;
+    /* left: 8px; */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
