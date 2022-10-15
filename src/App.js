@@ -59,7 +59,7 @@ function App() {
                 <div style={{fontSize:'1rem'}}>
                       {posts.map((post, index) => {
                           return (
-                              <div className="alternate-bgcolor" className="m-4">
+                              <div className="alternate-bgcolor m-4">
                                   {index<=5 ? 
                                     <span>
                                         <a onClick={() =>  window.location ='/forum'} href="#" className="home-forum-text"><FontAwesome name="comment"/> {post.heading}</a>
