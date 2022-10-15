@@ -4,7 +4,11 @@ import Navbar from './navbar';
 import './auth.css';
 import '../components/profile.css';
 import {GoogleLogin} from 'react-google-login';
+<<<<<<< HEAD
 // import client_id from '../client_id';
+=======
+//import client_id from '../client_id';
+>>>>>>> upstream/main
 var FontAwesome = require('react-fontawesome');
 
 
@@ -48,7 +52,11 @@ function Login(){
             </div>
             <div className="container text-center border shadow p-5 mt-5">
                 <GoogleLogin
+<<<<<<< HEAD
                     clientId={process.env.CLIENT_ID}
+=======
+                        clientId={process.env.CLIENT_ID}
+>>>>>>> upstream/main
                         buttonText="Login with Google"
                         onSuccess={onSucces}
 	    		onFailure={onFailure}
