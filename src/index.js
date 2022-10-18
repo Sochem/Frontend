@@ -12,6 +12,7 @@ import Profile from './components/profile';
 import Events from './components/events.jsx';
 import Family from './components/family';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Funds from './Funds';
 
 document.body.style.zoom = 0.9;
 const routing = (
@@ -25,6 +26,7 @@ const routing = (
       <Route exact path="/profile" component={Profile}/>
       <Route exact path="/family" component={Family}/>
       <Route exact path="/privacy_policy" component={ PrivacyPolicy }/>
+      <Route exact path ="/funds" component={Funds} />
 
     </CookiesProvider>
   </BrowserRouter>

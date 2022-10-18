@@ -1,0 +1,111 @@
+#funding {
+  margin: 10% auto;
+}
+
+#raise_funding {
+  margin: 5% auto;
+}
+
+.formHeading {
+  text-decoration: none;
+  margin-bottom: 10%;
+  font-weight: bolder;
+}
+
+.cf {
+  /* text-align: center; */
+  margin: 20px auto;
+  width: 60%;
+
+  .form-item {
+    margin: 45px 0px;
+
+    .checkbox-option {
+
+      input,
+      span {
+        width: fit-content;
+        font-size: 1.1rem;
+      }
+    }
+
+    label {
+      padding: 0;
+
+      span {
+        font-size: 0.9rem;
+      }
+
+      h5 {
+        font-size: 1.3rem;
+      }
+
+      .radio-item {
+        font-size: 1.1rem;
+      }
+    }
+
+    #contact-message {
+      height: 10px;
+    }
+  }
+
+  input,
+  textarea {
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-family: "Merriweather", sans-serif;
+    resize: none;
+  }
+
+  #input-submit {
+    color: white;
+    background: #23d504;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+  }
+
+  textarea {
+    height: 126px;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+#upload{
+  background-color:#fb6930;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 900px) {
+
+  #funding {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  #funding {
+    margin-top: 20%;
+  }
+}

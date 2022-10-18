@@ -33,6 +33,9 @@ function Navbar(){
                                 <a className="nav-link" name="events" onClick={()=> {window.location='/events'}}>EVENTS</a>
                             </a>
                             <a className="nav-item" href="#">
+                                <a className="nav-link" name="forum" onClick={() => { window.location = '/funds' }}> FUNDS </a>
+                            </a>
+                            <a className="nav-item" href="#">
                                 <a className="nav-link" name="forum" onClick={()=> {window.location='/forum'}}>FORUM</a>
                             </a>
                             <a className="nav-item" href="#">
