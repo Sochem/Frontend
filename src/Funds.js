@@ -258,7 +258,7 @@ function Funds() {
                         </h5>
                     </label>
                     
-                    <br /><br /> UPI Id: idk what to fill here rn
+                    <br /><br /> UPI Id: 9026663689@paytm
                 </Row>
 
                 {/* <Row className="form-item">
