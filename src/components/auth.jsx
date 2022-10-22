@@ -47,10 +47,10 @@ function Login(){
             </div>
             <div className="container text-center border shadow p-5 mt-5">
                 <GoogleLogin
-                    clientId={client_id}
+                        clientId={client_id}
                         buttonText="Login with Google"
                         onSuccess={onSucces}
-	    		onFailure={onFailure}
+	    		        onFailure={onFailure}
                         id="google-login-button"
                 />
                 {showLoader && <div class="loader"></div>}
