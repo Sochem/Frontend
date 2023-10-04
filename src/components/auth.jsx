@@ -6,10 +6,10 @@ import '../components/profile.css';
 import {GoogleLogin} from 'react-google-login';
 var FontAwesome = require('react-fontawesome');
 
-const client_id = process.env.CLIENT_ID
-console.log(client_id)
 
 function Login(){
+    const client_id = process.env.CLIENT_ID
+    console.log(client_id)
     console.log(client_id)
 
     const [token, setToken ] = useCookies(['mr-token']);
