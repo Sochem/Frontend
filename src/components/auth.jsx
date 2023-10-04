@@ -4,8 +4,9 @@ import Navbar from './navbar';
 import './auth.css';
 import '../components/profile.css';
 import {GoogleLogin} from 'react-google-login';
-import client_id from '../client_id';
 var FontAwesome = require('react-fontawesome');
+
+const client_id = process.env.CLIENT_ID
 
 function Login(){
 
