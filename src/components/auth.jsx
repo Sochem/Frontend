@@ -8,7 +8,7 @@ var FontAwesome = require('react-fontawesome');
 
 
 function Login(){
-    const client_id = process.env.CLIENT_ID
+    const client_id = process.env.REACT_APP_CLIENT_ID
     console.log(client_id)
     console.log(client_id)
 
